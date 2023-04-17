@@ -1,0 +1,2 @@
+/* constant-expression */:
+            /* code */
