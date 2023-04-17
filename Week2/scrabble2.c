@@ -16,31 +16,26 @@ int main(void)
 // wird nicht geprintet.. .
     if(score1>score2){
         printf("Player 1 wins!\n");
-    if(score1>score2){
+    }if(score1<score2){
         printf("Player 2 wins!\n");
-    } else printf("Tie!");
-    }
+    } else printf("Tie!\n");
+    
 }
 
 int compute_score(string word)
 {
-
    int currScore=0;
 
     for(int i = 0; i < strlen(word); i++){
        for(int a=0; a<sizeof(abc); a++){
 
            if(abc[a]==toupper(word[i])){
-            printf("points for %s by int:%i für %c: %i\n",word,i,word[i], POINTS[a]);
              currScore+=POINTS[a];       
              break;
         }
     } 
-
   }
-  printf("current Score ist: %i\n", currScore);
   return currScore;
-  
 }
 
 
