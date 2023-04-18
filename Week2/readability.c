@@ -12,8 +12,8 @@ int main(void)
   string input = get_string("Text: ");
 
 
-    double L = (count_letters(input) /count_words(input))*100.00;
-    double S = (count_sentences(input) / count_words(input))*100.00;
+    float L = 100*count_letters(input) /count_words(input);
+    float S = 100*count_sentences(input) / count_words(input);
     int grade = round(0.0588 * L - 0.296 * S - 15.8);
 
         if (grade < 1)
@@ -28,6 +28,9 @@ int main(void)
         {
             printf("Grade %i\n", grade);
         }
+        
+        // printf("%i\n %i\n %i\n %f\n %f\n %i\n",count_letters(input), count_words(input), count_sentences(input), L, S, grade);
+
 }
 
  int count_letters(string text){
