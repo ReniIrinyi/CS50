@@ -8,7 +8,7 @@ void print_bulb(int bit);
 
 int main(void)
 {
-string words="Hallo Adam Reni vagyok";
+string words="";
 
     int ascii[strlen(words)];
     int binary[8];
