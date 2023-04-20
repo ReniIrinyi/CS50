@@ -43,7 +43,7 @@ string words="Hallo Adam Reni vagyok";
         }
 
 
-    
+
     }
         printf("\n");
 }
