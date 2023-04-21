@@ -18,12 +18,10 @@ printf("STRING: %s; REPLACED: %s\n", argv[1], replace(argv[1]));
 }
 
 string replace(string input){
-  int size=0;
   string output=input;
 
   for(int i=0; i<strlen(input); i++){
      char c=tolower(input[i]);
-      size++;
 
     switch(c){
       case 'a':
